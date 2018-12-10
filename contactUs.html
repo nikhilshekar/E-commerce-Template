@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>E-commerce Website </title>
+    <meta name="keywords" content="">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+	<link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css" rel="stylesheet">
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+
+	<style>
+		.item{
+			width:150px;
+			height:250px;
+			margin:5px;
+		}
+		img{
+			background-size: 170px 150px;
+			width:170px;
+			height:150px;
+		}
+		.footer{
+			background:#343a40!important;
+			height:35px;
+			color:#b7b7b7;
+			padding:5px;
+		}
+	
+	
+	</style>
+</head>
+<body>
+	<nav class="navbar  navbar-expand-md navbar-dark bg-dark">
+		<div class="container my-2">
+		   <a class="navbar-brand" href="index.html">Logo</a>
+		   <div class="collapse navbar-collapse justify-content-md-center">
+			<ul class="navbar-nav">
+			  <li class="nav-item">
+					<button class="btn btn-success mx-1">Offer of the day</button>
+			  </li>
+			  <li class="nav-item ">
+					<a class="nav-link" href="#">Get flat 20% off on order over $75</a>
+			  </li>	
+			</ul>
+		  </div>
+		  <div class="collapse navbar-collapse justify-content-md-end">
+				<ul class="navbar-nav">
+					<li class="nav-item">
+						<a class="nav-link" href="#" data-toggle="modal" data-target="#loginModal">Login</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link " href="#" data-toggle="modal" data-target="#registerModal">Register</a>
+					</li>	
+					<li class="nav-item">
+						<a class="nav-link " href="aboutUs.html">AboutUs</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link " href="faq.html">FAQ</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link " href="contactUs.html">ContactUs</a>
+					</li>					
+				</ul>
+		  </div>
+		</div>  
+	</nav>
+
+	<nav class="navbar navbar-expand-md navbar-light bg-light">
+		<div class='container'>
+		<div class="collapse navbar-collapse justify-content-md-center" id="navbarSupportedContent">
+			<ul class="navbar-nav mr-auto">
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						Electronics
+					</a>
+					<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+					  <a class="dropdown-item" href="#">Mobile & Accessories</a>
+					  <a class="dropdown-item" href="#">Laptop & Desktop PC's</a>
+					  <a class="dropdown-item" href="#">Home Appliances</a>
+					</div>
+				</li>
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						Men
+					</a>
+					<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+					  <h6 class="dropdown-header">Footwear</h6>
+					  <a class="dropdown-item" href="#">Sports Shoes</a>
+					  <a class="dropdown-item" href="#">Casual Shoes</a>
+					  <a class="dropdown-item" href="#">Formal Shoes</a>
+					  <div class="dropdown-divider"></div>
+					  <h6 class="dropdown-header">Top wear</h6>
+					  <a class="dropdown-item" href="#">T-shirts</a>
+					  <a class="dropdown-item" href="#">Shirts</a>
+					  <a class="dropdown-item" href="#">Jackets</a>
+					  <div class="dropdown-divider"></div>
+					  <h6 class="dropdown-header">Bottom wear</h6>
+					  <a class="dropdown-item" href="#">Jeans</a>
+					  <a class="dropdown-item" href="#">Trousers</a>
+					  <a class="dropdown-item" href="#">Shorts</a>
+					</div>
+				</li>
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						Women
+					</a>
+					<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+					  <h6 class="dropdown-header">Footwear</h6>
+					  <a class="dropdown-item" href="#">Flats</a>
+					  <a class="dropdown-item" href="#">Heels</a>
+					  <a class="dropdown-item" href="#">Wedges</a>
+					  <div class="dropdown-divider"></div>
+					  <h6 class="dropdown-header">Clothings</h6>
+					  <a class="dropdown-item" href="#">Top,T-shirts & Shirts</a>
+					  <a class="dropdown-item" href="#">Jeans</a>
+					  <a class="dropdown-item" href="#">Skirts</a>
+					  <a class="dropdown-item" href="#">Shorts</a>
+					  <div class="dropdown-divider"></div>
+					  <h6 class="dropdown-header">Beauty & Grooming</h6>
+					  <a class="dropdown-item" href="#">Make Up</a>
+					  <a class="dropdown-item" href="#">Skin Care</a>
+					  <a class="dropdown-item" href="#">Hair Care</a>
+					</div>
+				</li>
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						Baby & Kids
+					</a>
+					<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+					  <a class="dropdown-item" href="#">Kids Clothing</a>
+					  <a class="dropdown-item" href="#">Kids Footwear</a>
+					  <a class="dropdown-item" href="#">Toys</a>
+					</div>
+				</li>
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						Home & Furniture
+					</a>
+					<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+					  <a class="dropdown-item" href="#">Kitchen & Dining</a>
+					  <a class="dropdown-item" href="#">Furniture</a>
+					  <a class="dropdown-item" href="#">Smart Home Automation</a>
+					   <a class="dropdown-item" href="#">Tools & Hardware</a>
+					</div>
+				</li>
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						Sports, Book & More
+					</a>
+					<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+					  <a class="dropdown-item" href="#">Books</a>
+					  <a class="dropdown-item" href="#">Gaming & Accessories</a>
+					  <a class="dropdown-item" href="#">Music, Movies & TV Shows</a>
+					   <a class="dropdown-item" href="#">Sports</a>
+					</div>
+				</li>
+			</ul>
+			<form class="form-inline my-2 my-lg-0 justify-content-md-center" action="cart.html">
+				<input class="form-control mr-lg-2" type="search" placeholder="Search" aria-label="Search">
+				<button class="btn btn-outline-success my-2 mr-lg-4" type="submit"><span class="glyphicon glyphicon-search"></span></button>
+				<button type="submit" class="btn btn-info">
+					<span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span> 
+				</button>
+			</form>
+			
+		</div>
+	</nav>
+	</div>
+	<div class="container">
+		<nav aria-label="breadcrumb" style="margin-top:5px;margin-bottom:5px;">
+			  <ol class="breadcrumb">
+					<li class="breadcrumb-item"><a href="index.html">Home</a></li>
+					<li class="breadcrumb-item active" aria-current="page">Contact Us</li>
+			  </ol>
+		</nav>
+		
+		<div class="alert alert-light" role="alert">
+			<h2 class="alert-heading">Contact Us</h2>
+			<h4>Are you curious about something? Do you have some kind of problem with our products?</h4>
+			<p>Please feel free to contact us, our customer service center is working for you 24/7.</p>
+			<hr>
+			<div class="row">
+				<div class="col-4">
+					<h3><span class="glyphicon glyphicon-map-marker"></span>&nbsp;&nbsp;Address</h3>
+					<address>
+						  <strong>Deakin University</strong><br>
+						 221 Burwood Hwy, Burwood<br>
+						  Melbourne, VIC 3125<br>
+						 
+					</address>
+				</div>
+				<div class="col-4">
+					<h3><span class="glyphicon glyphicon-phone-alt">&nbsp;Call Center</h3>
+					<p>This number is toll free if calling from Australia otherwise we advise you to use the electronic form of communication.</p>
+					 <abbr title="Phone">P:</abbr> (+61) 481349123
+				</div>
+				<div class="col-4">
+					<h3><span class="glyphicon glyphicon-envelope">&nbsp;Electronic support</h3>
+					<p>Please feel free to write an email to us or to use our electronic ticketing system.</p>
+					<Strong>nshekar@deakin.edu.au</strong>
+				</div>
+			</div>
+			<hr>
+			<form>
+			  <h2>Contact Form</h2>
+			  <div class="form-row">
+				<div class="col">
+				   <label>First Name</label>
+				  <input type="text" class="form-control">
+				</div>
+				<div class="col">
+				   <label>Last Name</label>
+				  <input type="text" class="form-control">
+				</div>
+			  </div>
+			  <div class="form-row">
+			     
+				<div class="col">
+				  <label>Email</label>
+				  <input type="email" class="form-control">
+				</div>
+				<div class="col">
+				   <label>Subject</label>
+				  <input type="text" class="form-control" ">
+				</div>
+			  </div>
+			   <label>Message</label>
+			   <input type="text" class="form-control" style="height:65px; margin-bottom:5px;">
+				<div class="text-center">  <button type="button" class="btn btn-success">Send Message</button></div>
+			</form>
+			
+		
+		</div>
+	
+	</div>
+	<footer class="footer" style="margin-top:47px;">
+      <div class="container">
+			<small>
+			Policies:
+			
+			<a  href="#">&nbsp;&nbsp;Return Policy &nbsp;</a>
+			<a  href="#">Term of use &nbsp;</a>
+			<a  href="#">Security &nbsp;</a>
+			<a  href="#">Privacy</a>
+			</small>
+        <span class="float-right">Copyright &copy; 2018</span>
+      </div>
+    </footer>
+</body>
+
+</html>
